@@ -1,5 +1,5 @@
 import ContactList from "./components/ContactList/ContactList";
-
+import initialContacts from "./components/сontacts.json";
 
 
 function App() {
@@ -10,7 +10,7 @@ return (
 <h1>Phonebook</h1>
   {/* <ContactForm /> */}
   {/* <SearchBox /> */}
-  <ContactList contacts={ContactList} />
+  <ContactList contact={initialContacts} />
    
 </div>
 

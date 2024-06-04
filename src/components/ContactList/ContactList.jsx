@@ -1,7 +1,7 @@
 import Contact from "../Contact/Contact"
 
 
-const ContactList = (contacts) => {
+const ContactList = ({contacts}) => {
   return (
     <div>
         <ul>
