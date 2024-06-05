@@ -30,12 +30,18 @@ useEffect(() => {
     });
   };
 
+  const deleteContact = (contactId)=>{
+    setContacts(prevContacts => {
+      return prevContacts.filter((contact)=> contact.id !== contactId )
+    })
+  }
+
 return (
 <div>
 <h1>Phonebook</h1>
   <ContactForm onAdd={addContact} />
   <SearchBox value={filter} onFilter={setFilter} />
-  <ContactList contacts={filterContact} />
+  <ContactList contacts={filterContact} onDelete={deleteContact} />
    
 </div>
 
